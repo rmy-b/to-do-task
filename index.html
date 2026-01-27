@@ -1,0 +1,69 @@
+<!--Please build a Simple Todo (CRUD) application using HTML, CSS, and JavaScript only. 
+API URL: https://6971f17932c6bacb12c51f9b.mockapi.io/simple-todo 
+Required features: 
+    Add task 
+    Mark task as completed 
+    Edit task priority 
+    Delete task 
+    Filter tasks by status (All / Pending / Completed – do this in JavaScript) 
+    Task Fields (Schema): 
+        title (Task name) 
+        priority (Low / Medium / High) 
+        status (Pending / Completed)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>To-Do List</h1>
+  <p>My Daily Tasks</p>
+</header>
+
+<main class="container">
+
+  <section class="table-container">
+ 
+    <div class="table-header">
+      <div>Title</div>
+      <div>Priority</div>
+      <div class="status-header">Status
+        <select id="filter">
+          <option value="all">All</option>
+          <option value="pending">Pending</option>
+          <option value="completed">Completed</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="table-row input-row">
+      <input type="text" id="titleInput" placeholder="Enter task">
+      <input list="priorityList" id="priorityInput" placeholder="Priority">
+      <datalist id="priorityList">
+        <option value="Low"></option>
+        <option value="Medium"></option>
+        <option value="High"></option>
+      </datalist>
+      <div class="status-cell"><span>Pending</span></div>
+    </div>
+    <div class="add-btn-wrapper">
+      <button id="addBtn">Add Task</button>
+    </div>
+    <div id="tasks"></div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  Todo App • Internship Task
+</footer>
+<script src = "script.js" ></script>
+</body>
+</html>
