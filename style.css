@@ -122,3 +122,62 @@ button#addBtn:hover {
     padding: 5px;
     border-radius: 5px;
 }
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Hide modal */
+.hidden {
+  display: none;
+}
+
+/* Modal Card */
+.modal-card {
+  background: #fffef2;
+  padding: 20px 25px;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+}
+
+.modal-card p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* Modal Buttons */
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-actions button {
+  padding: 6px 14px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #f2d561;
+  color: #3a2e00;
+}
+
+.modal-actions button:hover {
+  background-color: #e4b629;
+}
+
+.state-message {
+  text-align: center;
+  padding: 20px;
+  color: #7a6a00;
+  font-size: 0.95rem;
+}
