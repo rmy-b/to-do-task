@@ -137,12 +137,11 @@ button#addBtn:hover {
   z-index: 1000;
 }
 
-/* Hide modal */
+
 .hidden {
   display: none;
 }
 
-/* Modal Card */
 .modal-card {
   background: #fffef2;
   padding: 20px 25px;
@@ -156,7 +155,7 @@ button#addBtn:hover {
   font-size: 1rem;
 }
 
-/* Modal Buttons */
+
 .modal-actions {
   display: flex;
   justify-content: space-between;
