@@ -30,7 +30,7 @@ addBtn.addEventListener("click", async () => {
   const newTask = {
     title: titleInput.value,
     priority: priorityInput.value,
-    status: "pending"
+    status: "Pending"
   };
 
   await fetch(API_URL, {
@@ -55,7 +55,7 @@ function renderTasks(tasks) {
   tasksDiv.innerHTML = "";
 
   const filtered = tasks.filter(task => {
-    if (filter.value === "all") return true;
+    if (filter.value === "All") return true;
     return task.status === filter.value;
   });
 
@@ -87,8 +87,8 @@ function renderTasks(tasks) {
         <div><input list="priorityList" value="${task.priority}"></div>
         <div>
           <select>
-            <option value="pending" ${task.status === "pending" ? "selected" : ""}>Pending</option>
-            <option value="completed" ${task.status === "completed" ? "selected" : ""}>Completed</option>
+            <option value="Pending" ${task.status === "Pending" ? "selected" : ""}>Pending</option>
+            <option value="Completed" ${task.status === "Completed" ? "selected" : ""}>Completed</option>
           </select>
         </div>
         <div class="actions-cell">
