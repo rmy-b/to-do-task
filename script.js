@@ -50,7 +50,7 @@ function resetInputRow() {
   priorityInput.value = "";
 }
 
-// RENDER TASKS 
+
 function renderTasks(tasks) {
   tasksDiv.innerHTML = "";
 
